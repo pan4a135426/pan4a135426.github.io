@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Портфолио — Панихин Никита</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="active">Главная</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#education">Образование</a></li>
+      <li><a href="#achievements">Достижения</a></li>
+      <li><a href="#projects">Проекты</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Привет, я <span>Никита</span></h1>
+      <p>Я студент и начинающий разработчик. Интересуюсь программированием,
+        разработкой приложений и современными технологиями.</p>
+
+      <p class="typed-text" id="typed"></p>
+
+      <button onclick="document.querySelector('#contacts').scrollIntoView({behavior:'smooth'})">
+        Связаться со мной
+      </button>
+    </div>
+    <img src="C:/Users/panik/Desktop/src/assets/avatar.png" alt="Аватар разработчика">
+  </section>
+
+  <section id="skills">
+    <h2>Навыки</h2>
+
+    <article>
+      <h3>Hard Skills</h3>
+      <div class="skill">
+        <span>Python</span>
+        <div class="progress"><div style="width:70%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Java</span>
+        <div class="progress"><div style="width:60%"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress"><div style="width:10%"></div></div>
+      </div>
+    </article>
+
+    <article>
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Командная работа</li>
+        <li>Коммуникабельность</li>
+        <li>Критическое мышление</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="education">
+    <h2>Образование</h2>
+    <div class="timeline">
+      <div class="event">
+        <h3>Университет</h3>
+        <span>2023 — настоящее время</span>
+        <p>Бакалавр, Computer science</p>
+      </div>
+      <div class="event">
+        <h3>Школа</h3>
+        <span>2011 — 2022</span>
+        <p>Физико-математический профиль</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Достижения</h2>
+    <ul class="cards">
+      <li>📜 Сертификат Coursera</li>
+      <li>🥇 Олимпиада по программированию</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Проекты</h2>
+    <div class="project-grid">
+      <article class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Персональный сайт-портфолио.</p>
+        <p><strong>Технологии:</strong> HTML, CSS, JS</p>
+        <a href="#">GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Связаться</h2>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Имя" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+      <p id="formStatus"></p>
+    </form>
+
+    <p>Email: student@example.com</p>
+    <p>Город: Павлодар</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Панихин Никита</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
